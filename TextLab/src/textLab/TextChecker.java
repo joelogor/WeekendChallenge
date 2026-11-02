@@ -57,7 +57,6 @@ public class TextChecker {
                     hasContent = false;
                 }
 
-                // Skip consecutive sentence punctuation
                 while (i + 1 < text.length()) {
                     char next = text.charAt(i + 1);
 
@@ -73,7 +72,6 @@ public class TextChecker {
             }
         }
 
-        // Count a final fragment without punctuation
         if (hasContent) {
             count++;
         }
@@ -181,12 +179,11 @@ public class TextChecker {
         return longestWords;
     }
 
-    // Get original passage
+  
     public String getOriginalText() {
         return originalText;
     }
 
-    // Get edited passage
     public String getEditedText() {
         return editedText;
     }
