@@ -184,7 +184,6 @@ public class TextChecker {
         return originalText;
     }
 
-    // Get edited passage
     public String getEditedText() {
         return editedText;
     }
